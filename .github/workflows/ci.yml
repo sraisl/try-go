@@ -7,9 +7,13 @@ on:
       - feature/**
     tags:
       - v*
+    paths-ignore:
+      - README.md
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - README.md
 
 permissions:
   contents: write
