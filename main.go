@@ -12,16 +12,17 @@ import (
 )
 
 var (
-	titleStyle    = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("39"))
-	pathStyle     = lipgloss.NewStyle().Foreground(lipgloss.Color("244"))
-	labelStyle    = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("212"))
-	queryStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("229"))
-	selectedStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("229")).Background(lipgloss.Color("62")).Padding(0, 1)
-	itemStyle     = lipgloss.NewStyle().Foreground(lipgloss.Color("250")).PaddingLeft(2)
-	createStyle   = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("48")).PaddingLeft(2)
-	emptyStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("214"))
-	warningStyle  = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("203"))
-	helpStyle     = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
+	uiRenderer    = lipgloss.NewRenderer(os.Stderr)
+	titleStyle    = uiRenderer.NewStyle().Bold(true).Foreground(lipgloss.Color("39"))
+	pathStyle     = uiRenderer.NewStyle().Foreground(lipgloss.Color("244"))
+	labelStyle    = uiRenderer.NewStyle().Bold(true).Foreground(lipgloss.Color("212"))
+	queryStyle    = uiRenderer.NewStyle().Foreground(lipgloss.Color("229"))
+	selectedStyle = uiRenderer.NewStyle().Bold(true).Foreground(lipgloss.Color("229")).Background(lipgloss.Color("62")).Padding(0, 1)
+	itemStyle     = uiRenderer.NewStyle().Foreground(lipgloss.Color("250")).PaddingLeft(2)
+	createStyle   = uiRenderer.NewStyle().Bold(true).Foreground(lipgloss.Color("48")).PaddingLeft(2)
+	emptyStyle    = uiRenderer.NewStyle().Foreground(lipgloss.Color("214"))
+	warningStyle  = uiRenderer.NewStyle().Bold(true).Foreground(lipgloss.Color("203"))
+	helpStyle     = uiRenderer.NewStyle().Foreground(lipgloss.Color("241"))
 )
 
 type model struct {

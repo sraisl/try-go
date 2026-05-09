@@ -18,6 +18,21 @@ Die Anwendung zeigt vorhandene Verzeichnisse an, filtert sie während der Eingab
 
 Die Shell muss den Verzeichniswechsel selbst ausführen. Deshalb wird die Go-Anwendung über eine `zsh`-Funktion eingebunden.
 
+Binary installieren:
+
+```zsh
+go install .
+```
+
+Das installiert `tries` standardmäßig nach `$(go env GOPATH)/bin`, also meist `~/go/bin`. Dieses Verzeichnis muss in deinem `PATH` liegen.
+
+Alternativ systemweit nach `/usr/local/bin`:
+
+```zsh
+go build -o tries .
+sudo install -m 0755 tries /usr/local/bin/tries
+```
+
 Einmalig in der aktuellen Shell:
 
 ```zsh
@@ -69,7 +84,7 @@ go test ./...
 Build:
 
 ```zsh
-go build ./...
+go build -o tries .
 ```
 
 ## Releases

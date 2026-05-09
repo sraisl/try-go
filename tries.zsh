@@ -1,5 +1,5 @@
 tries() {
 	local dir
-	dir="$(go run /Users/stefan/src/tries/2026-05-05-go/try-go)"
+	dir="$(command tries "$@")"
 	[[ -n "$dir" ]] && cd "$dir"
 }
