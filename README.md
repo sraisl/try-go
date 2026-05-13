@@ -13,6 +13,7 @@ Die Anwendung zeigt vorhandene Verzeichnisse an, filtert sie während der Eingab
 - neue Verzeichnisse bekommen ein Präfix im Format `YYYY-MM-DD-name`
 - Verzeichnisse nach zweifacher Bestätigung mit `Backspace` löschen
 - farbige Terminal-Oberfläche mit Bubble Tea und Lip Gloss
+- Lip-Gloss-Styles werden über einen Renderer auf `os.Stderr` initialisiert
 
 ## Installation
 
