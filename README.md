@@ -36,13 +36,13 @@ sudo install -m 0755 tries /usr/local/bin/tries
 Einmalig in der aktuellen Shell:
 
 ```zsh
-source /Users/stefan/src/tries/2026-05-05-go/try-go/tries.zsh
+source /path/to/try-go/tries.zsh
 ```
 
 Dauerhaft in `~/.zshrc`:
 
 ```zsh
-source /Users/stefan/src/tries/2026-05-05-go/try-go/tries.zsh
+source /path/to/try-go/tries.zsh
 ```
 
 Danach kann das Werkzeug mit folgendem Befehl gestartet werden:
