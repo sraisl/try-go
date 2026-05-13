@@ -35,6 +35,8 @@ sudo install -m 0755 tries /usr/local/bin/tries
 
 Einmalig in der aktuellen Shell:
 
+`/path/to/try-go/tries.zsh` ist ein Platzhalter und muss auf deinen lokalen Repo-Pfad zeigen.
+
 ```zsh
 source /path/to/try-go/tries.zsh
 ```
