@@ -11,6 +11,7 @@ build:
 	go build -o $(BINARY) .
 
 install: build
+	install -d $(BINDIR)
 	install -m 0755 $(BINARY) $(BINDIR)/$(BINARY)
 
 install-local:
